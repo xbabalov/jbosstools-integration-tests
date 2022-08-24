@@ -14,7 +14,8 @@
 	<packaging>eclipse-test-plugin</packaging>
 	<properties>
 		<maven.test.failure.ignore>true</maven.test.failure.ignore>
-		<systemProperties>${integrationTestsSystemProperties}</systemProperties>
+		<junitProperties>-Dreddeer.close.welcome.screen=${reddeer.close.welcome.screen} -Dreddeer.disable.maven.download.repo.index.on.startup=${reddeer.disable.maven.download.repo.index.on.startup}</junitProperties>
+		<systemProperties>-Dswt.bot.test.record.screencast=${swt.bot.test.record.screencast} -Dorg.eclipse.swtbot.screenshots.dir=${project.build.directory}/screenshots ${junitProperties}</systemProperties>
 	</properties>
 	
 	<profiles>

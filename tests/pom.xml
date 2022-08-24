@@ -52,6 +52,7 @@
 				<module>org.jboss.tools.ws.ui.bot.test</module>
 				<module>org.jboss.tools.perf.test</module>
 				<module>org.jboss.tools.testng.ui.bot.test</module>
+				<module>org.jboss.tools.usage.ui.bot.test</module>
 			</modules>
 		</profile>
 		<profile>
